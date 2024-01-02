@@ -158,7 +158,7 @@ section.one{
 }
 section.two{
     bottom: 0;
-    right: 0;
+    left: 0;
 }
 
 
@@ -326,7 +326,7 @@ footer{
 }
 /*media queries*/
 /*navigation*/
-@media (min-width:860px){
+@media (min-width:1200px){
     nav{
         display: grid;
         grid-template-columns: 1fr 0.5fr;
