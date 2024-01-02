@@ -1,0 +1,328 @@
+/*loading google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e;
+    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+}
+main{
+    text-align: center;
+}
+
+header a{
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+}
+ul,h2,h1,h3,h5,p,li{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav{
+    text-align: center;
+}
+a.navs:hover{ 
+    background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
+    background-clip: text;
+     -webkit-background-clip: text; /* For older browsers */
+     color: transparent;
+     text-wrap: balance;
+}
+
+
+
+/*styling the hero section*/
+
+section.hero{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 960px;
+    margin: 0 auto;
+    column-gap: 20px;
+    place-items: center; 
+    
+   
+}
+main img.hero-img{
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1px solid rgba(255, 162, 116,0.3);
+    /*
+    background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box; /* For older browsers */
+    
+}
+
+main img.hero-img-web{
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 1px solid rgba(255, 162, 116,0.3);
+    
+}
+
+.svgg{
+    padding: 0.5rem;
+    box-sizing: border-box;
+    max-width: 50px;  
+}
+
+/*the intro*/
+
+div.extra, div.extra-web{
+    padding: 1.5rem 0;
+}
+section.intro{
+    padding: 0.75rem 0;
+
+}
+
+h1{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0.5rem 0;
+}
+
+h2,h3{
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface', serif;
+    padding: 1rem 0;
+    
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+h1 span{
+    background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
+   background-clip: text;
+    -webkit-background-clip: text; /* For older browsers */
+    color: transparent;
+    text-wrap: balance;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+h5{
+    font-size: 0.875rem;
+    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem 0;
+    padding-top: 0;
+    
+}
+
+p.intro-paragraph{
+    font-family: 'Abril Fatface', serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    padding: 0.5rem 0.25rem;
+    
+}
+
+section.waves{
+    width: 84px;
+    position: absolute;
+    z-index: -1;
+    
+}
+section.one{
+    top: 0;
+    left: 0;
+}
+section.two{
+    bottom: 0;
+    
+    right: 0;
+    
+}
+
+
+
+
+
+/*frontend projects*/
+hr{
+    position: relative;
+    border-top: 1px solid rgba(255, 114, 186,0.8);
+
+    margin: 0;
+}
+div.front-end{
+    text-align: left;
+    padding: 1.5rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+div.image-container{
+    padding: 1rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255, 162, 116,0.3);
+    
+}
+div.front{
+    padding: 1rem 0;
+    position: relative;
+    z-index: 2;
+}
+div.front .front-img{
+    width: 100%;
+   
+}
+
+div.links{
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+button.go-to{
+    padding: 0.375rem;
+    border: 1px solid #FFA274;
+    background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
+    color: white;
+     text-wrap: balance;
+     border-radius: 0.5rem;
+     font-size: 0.875rem;
+     text-transform: uppercase;
+     &:hover{
+        border-color: #A76CFE;
+     }
+    
+}
+
+button.repo{
+    padding: 0.375rem;
+    border: 1px solid #FFA274;
+    background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
+    background-clip: text;
+     -webkit-background-clip: text; /* For older browsers */
+     color: transparent;
+     text-wrap: balance;
+     border-radius: 0.5rem;
+     font-size: 0.875rem;
+     text-transform: uppercase;
+     &:hover{
+        border-color: #A76CFE;
+     }
+}
+
+/*media queries*/
+/*navigation*/
+@media (min-width:860px){
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        text-align: left;
+    }
+    nav header{
+        align-self: start;
+    } 
+}
+
+/*waves*/
+@media (min-width:748px){
+   section.waves{
+    width: 160px;
+   }
+}
+
+
+/*the intro section*/
+@media (min-width:749px){
+    div.extra{
+        display: none;
+    }
+    section.hero-web{
+        grid-template-columns:repeat(2,1fr);
+        place-content: center;
+        max-width: 960px;
+        min-height: 80vh;
+    }
+    
+    section.icon-web{
+       grid-column: span 2;
+       display: grid;
+       grid-template-columns: repeat(5,60px);
+       
+    }
+  
+    
+ }
+ 
+@media (max-width:748px){
+    div.extra-web{
+        display: none;
+    }
+}
+
+/*frontend */
+@media (min-width:749px){
+    div.front{
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        column-gap: 20px;
+        place-items: center;
+    }
+}
+
+@media (min-width:960px){
+    div.front{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        padding: 2rem 0;
+    }
+    button.go-to, button.repo{
+        padding: 0.75rem 2rem;
+    }
+    h1{
+        font-size: 2rem;
+        
+        line-height: 2.75rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+   .hero-img{
+    text-align: left;
+   }
+   
+   div.front p{
+    font-size: 1.125rem;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
+
+   p.intro-paragraph{
+    
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    padding: 0.5rem 0.25rem;
+    
+    }
+
+}
