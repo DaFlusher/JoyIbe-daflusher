@@ -11,6 +11,7 @@ body{
 }
 main{
     text-align: center;
+    position: relative;
 }
 
 header a{
@@ -47,7 +48,7 @@ a.navs:hover{
 section.hero{
     display:grid;
     grid-template-columns: 2fr 1fr;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     column-gap: 20px;
     place-items: center; 
@@ -149,8 +150,7 @@ p.intro-paragraph{
 section.waves{
     width: 84px;
     position: absolute;
-    z-index: -1;
-    
+    z-index: -1; 
 }
 section.one{
     top: 0;
@@ -158,12 +158,85 @@ section.one{
 }
 section.two{
     bottom: 0;
-    
     right: 0;
-    
 }
 
 
+
+/*animations animation*/
+.animations{
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem;
+    max-width: 1200px;
+    text-align: center;
+}
+.animations-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow-x: hidden;
+    z-index: 1;
+   background-color: #0e0e0e;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+
+  }
+  
+  .animations-text {
+    white-space: nowrap;
+    animation: moveDisappear 20s linear infinite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+     
+    
+  }
+  
+  .animations-text span {
+     /* Adjust spacing between animated texts */
+     opacity: 0;
+    animation: fadeInOut 20s linear infinite;
+    background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
+    background-clip: text;
+    -webkit-background-clip: text; /* For older browsers */
+    color: transparent;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    
+  }
+  
+  @keyframes moveDisappear {
+    0% {
+      transform: translateX(50%);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+      }
+    75% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  
+ 
+@keyframes fadeInOut {
+     100% {
+      opacity: 0;
+    }
+    0%,25%,50%,75% {
+      opacity: 1;
+    }
+  }
+ 
 
 
 
@@ -178,7 +251,7 @@ div.front-end{
     text-align: left;
     padding: 1.5rem 0;
     max-width: 1200px;
-    margin: 0 auto;
+   
     position: relative;
     z-index: 2;
     min-height: 300px;
@@ -238,6 +311,7 @@ button.repo{
         border-color: #A76CFE;
      }
 }
+
 
 /*about me*/
 
