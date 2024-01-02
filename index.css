@@ -19,7 +19,7 @@ header a{
     padding: 0;
     margin: 0;
 }
-ul,h2,h1,h3,h5,p,li{
+ul,h2,h1,h3,h4,h5,p,li{
     margin: 0;
 }
 
@@ -117,6 +117,17 @@ h1 span{
 h3{
     font-size: 1.25rem;
 }
+h3.coming-soon{
+    background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
+    background-clip: text;
+     -webkit-background-clip: text; /* For older browsers */
+     color: transparent;
+     text-align: center;
+}
+
+h4{
+    font-size: 1rem;
+}
 
 h5{
     font-size: 0.875rem;
@@ -170,6 +181,7 @@ div.front-end{
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    min-height: 300px;
 }
 div.image-container{
     padding: 1rem;
@@ -189,6 +201,7 @@ div.front .front-img{
     width: 100%;
    
 }
+
 
 div.links{
     padding: 0.5rem 0;
@@ -226,6 +239,17 @@ button.repo{
      }
 }
 
+/*about me*/
+
+div.about{
+    text-wrap: balance;
+}
+
+/*footer*/
+footer{
+    font-size: 0.75rem;
+    text-align: center;
+}
 /*media queries*/
 /*navigation*/
 @media (min-width:860px){
