@@ -187,7 +187,7 @@ section.two{
   
   .animations-text {
     white-space: nowrap;
-    animation: moveDisappear 20s linear infinite;
+    animation: moveDisappear 25s linear infinite;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -199,8 +199,7 @@ section.two{
   
   .animations-text span {
      /* Adjust spacing between animated texts */
-     opacity: 0;
-    animation: fadeInOut 20s linear infinite;
+     opacity: 1;
     background-image: linear-gradient(to right, #A76CFE,#FF72BA, #FFA274);
     background-clip: text;
     -webkit-background-clip: text; /* For older browsers */
@@ -228,15 +227,6 @@ section.two{
     }
   }
   
- 
-@keyframes fadeInOut {
-     100% {
-      opacity: 0;
-    }
-    0%,25%,50%,75% {
-      opacity: 1;
-    }
-  }
  
 
 
